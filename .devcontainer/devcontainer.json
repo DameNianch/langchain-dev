@@ -1,0 +1,25 @@
+{
+    "name": "langchain-dev",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "langchain-dev",
+    "workspaceFolder": "/workdir",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode-remote.remote-containers",
+                "ms-python.black-formatter",
+                "GitHub.copilot-chat",
+                "GitHub.copilot",
+                "ms-toolsai.jupyter-renderers",
+                "ms-toolsai.jupyter"
+            ],
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "python.defaultInterpreterPath": "/usr/local/bin/python"
+            }
+        }
+    }
+}

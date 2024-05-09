@@ -1,0 +1,10 @@
+services:
+  langchain-dev:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/workdir
+    tty: true
+    working_dir: /workdir
